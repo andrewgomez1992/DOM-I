@@ -43,7 +43,16 @@ console.log('project wired!')
 
 // nav
 const navElem = document.querySelectorAll("nav a");
+
+// navElem = document.getElementById("#");
 // navElem.classList.add("italic");
+
+// for (let i = 0; i < navElem.length; i++) {
+//     navElem[i] = document.getElementById(navElem)
+
+// }
+navElem.forEach(navElem => navElem.classList.add('italic')); // if you need to add classes to multiple
+
 navElem[0].textContent = "Services";
 navElem[1].textContent = "Product";
 navElem[2].textContent = "Vision";
@@ -103,7 +112,8 @@ aboutElem[7].textContent = "sales@greatidea.io";
 // contactInfo[0].textContent = "123 Way 456 Street Somewhere, USA";
 // footer 
 const footerElem = document.querySelector("footer a");
-// footerElem.classList.add("bold");
+footerElem.classList.add('bold'); // if you just need to add one class
+
 footerElem.textContent = "Copyright Great Idea! 2021";
 
 
